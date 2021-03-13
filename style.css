@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat";
+    background-color: #f1f5f8;
+    color: #5C6BC0
+}
+
+.logo i{
+    background-color: inherit;
+    font-size: 2rem;
+    position: relative;
+    top: 3px;
+    animation: dumbell .8s ease-in .1s;
+}
+
+.fa-dumbbell:hover{
+    animation: dumbell .8s ease-in .1s;
+}
+
+@keyframes dumbell{
+    0%{
+        transform: translateY(-40%);
+    }
+    20%{
+        transform:translateY(40%);
+    }
+    40%{
+        transform: translateY(30%);
+    }
+    60%{
+        transform: translateY(-60%);
+    }
+    80%{
+        transfrom: translateY(-15%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+}
+
+nav{
+    width: 100vw;
+    
+    
+}
+.logo-container{
+    box-shadow: 0px 2px 4px 4px #ccc;
+    display: flex;
+    width: 100vw;
+    background-color: white;
+    height: 3rem;
+    align-items: center;
+
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 2rem;
+    background-color: white;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(54, 53, 53);
+    font-size: 1.6rem;
+}
+/* .logo{
+    display: flex;
+    border: 1px solid black;
+    height: 3rem;
+  
+    align-items: center;
+}
+ */
+i{
+    background-color: unset;
+    color: #add7f7;
+    font-size: 2rem;
+}
+.btn{
+    background-color: unset;
+    border: none;
+    transition: all .3s linear
+}
+.btn:active{
+    outline: none;
+    border: none;
+}
+.rotate:active{
+    outline: none;
+    border: none;
+}
+.rotate{
+    transform: rotate(90deg);
+       
+    
+}
+.nav_links{
+    height: 0;
+    background-color: white;
+    overflow: hidden;
+    transition: height 0.2s linear;
+}
+.show_links{
+    height: 8rem;
+    background-color: white;
+}
+
+.nav_links li{
+    margin: .5rem;
+    font-size: 1.2rem;
+    font-weight:300 ;
+    background-color: white;
+    color: rgb(54, 53, 53);
+
+}
+
+.inline_navbar{
+    display: flex;
+    justify-content: center;
+    background-color: unset;
+    
+}
+li{
+    background-color: unset;
+    cursor: pointer;
+    
+}
+li:hover{
+    transform: scale(1.15);
+    transition: transform .1s linear;
+}
+
+.btn{
+    margin-right: 1rem;
+}
+#nav_links_container{
+   
+    transform: translateY(-100%);
+   
+}
+
+
+
+
+
+li{
+    list-style: none;
+    margin-right: 1rem ;
+}
+
+.nav_links{
+   
+}
+@media (min-width:600px){
+    
+    .btn{
+        display: none;
+        
+    }
+
+    .nav_links{
+        display: none;
+    }
+    
+}
+
+@media (max-width:600px){
+    
+    .inline_navbar{
+        display: none;
+        
+    }
+    
+    
+}
+
+
