@@ -4,7 +4,7 @@ let divv = document.querySelector(".nav_links");
 let btn = document.getElementById("btn");
 let getWidth = document.querySelector(".getWidth");
 let grid = document.querySelector("#grid");
-
+let gridWidth = document.querySelector('#width');
 console.log(divv.classList[0]);
 
 hamburger.addEventListener("click",()=>{
@@ -21,5 +21,6 @@ hamburger.addEventListener("click",()=>{
 
 getWidth.addEventListener("click",()=>{
     
-    grid.textContent = window.innerWidth
+    grid.textContent = window.innerWidth;
+    gridWidth.textContent = window.innerHeight;
 })
