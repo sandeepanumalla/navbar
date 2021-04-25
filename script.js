@@ -2,6 +2,8 @@ let hamburger = document.querySelector(".btn");
 let navLists = document.getElementById("nav_links_container");
 let divv = document.querySelector(".nav_links");
 let btn = document.getElementById("btn");
+let getWidth = document.querySelector(".getWidth");
+let grid = document.querySelector("#grid");
 
 console.log(divv.classList[0]);
 
@@ -15,4 +17,9 @@ hamburger.addEventListener("click",()=>{
         btn.classList.remove("rotate");
     }
     
+})
+
+getWidth.addEventListener("click",()=>{
+    
+    grid.textContent = window.innerWidth
 })
